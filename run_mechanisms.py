@@ -1,7 +1,7 @@
 """
 run_mechanisms.py — the contribution-grade comparison: existing memory vs new memory.
 
-Phase 1's headline (run_experiment.py) answered the EXAM question "does memory help?"
+Phase 1's headline (run_experiment.py) answered the first question, "does memory help?"
 (yes — textbook). This script asks the harder, non-obvious question:
 
     Given the SAME replay budget (same number of value-updates per real step), does it
@@ -16,7 +16,7 @@ differ ONLY in the replay-selection mechanism:
     similarity   : k-nearest in the AUTOENCODER LATENT    (analogy — uses the AE as the key)
 
 Equalising the budget removes the "more compute" confound, so any difference is the
-mechanism. The `similarity` arm is the one built from Prof. Kulakov's ingredients, and
+mechanism. The `similarity` arm is the one built from the architecture's own components, and
 it is the only arm in which the autoencoder is load-bearing.
 
 NOTE ON HONESTY: this is a fair test, not a demo rigged for one winner. Whatever the

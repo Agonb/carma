@@ -1,5 +1,5 @@
 """
-autoencoder.py — a small numpy autoencoder (Prof. Kulakov's "autoencoder" primitive).
+autoencoder.py — a small numpy autoencoder (the perception component).
 
 It compresses the agent's whole-maze observation into a short latent code. That latent is
 used as the *key* for episodic memory: "have I been in a situation that looked like
@@ -7,7 +7,7 @@ this before, and what worked?" — i.e. analogy-by-similarity, which is exactly 
 kind of memory the experiment manipulates.
 
 This is a one-hidden-layer autoencoder (ReLU encoder, linear decoder) trained by
-mini-batch SGD with Adam. The convolutional autoencoder (CAE) Prof. Kulakov named is
+mini-batch SGD with Adam. The convolutional autoencoder (CAE) variant is
 a drop-in upgrade for Phase 2 (swap the encoder for conv layers via PyTorch); the
 *role* in the architecture is identical, so Phase 1 keeps it dependency-free in numpy.
 """

@@ -13,7 +13,7 @@ offers four selection mechanisms over the same stored transitions:
   - similarity   : the k nearest past situations in the      (the autoencoder-latent key —
                    AUTOENCODER LATENT space (analogy)          makes the AE load-bearing)
 
-`similarity` is the mechanism built from Prof. Kulakov's ingredients (a learned
+`similarity` is the mechanism built from the architecture's own components (a learned
 representation as the retrieval key, analogy-by-similarity). It is the only one that
 uses the autoencoder latent, so comparing it against the others at EQUAL budget is
 what tells us whether a perceptually-structured memory beats a flat one.
