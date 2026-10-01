@@ -1,0 +1,26 @@
+{
+  "maze_size": 15,
+  "n_traps": 3,
+  "episodes": 120,
+  "seeds": 20,
+  "success_threshold": 0.9,
+  "final_return_M0": 0.15175999999999998,
+  "final_return_M1": 0.7273,
+  "final_steps_M0": 62.284,
+  "final_steps_M1": 20.07,
+  "final_success_M0": 0.816,
+  "final_success_M1": 1.0,
+  "success_at_ep20_M0": 0.5,
+  "success_at_ep20_M1": 0.9,
+  "episodes_to_90pct_M0": 47.45,
+  "episodes_to_90pct_M1": 15.55,
+  "speedup_x": 3.0514469453376205,
+  "sig_M0_minus_M1_ep_to_90": {
+    "mean_diff": 31.9,
+    "t": 11.238130528015486,
+    "df": 19,
+    "p": 7.780049319171086e-10,
+    "ci95_low": 26.44875,
+    "ci95_high": 37.4
+  }
+}

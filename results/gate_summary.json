@@ -1,0 +1,25 @@
+{
+  "seeds": 12,
+  "eval_episodes": 60,
+  "eval_eps": 0.25,
+  "n_traps": 6,
+  "traps_per_ep_gate_off": 0.1722222222222222,
+  "traps_per_ep_gate_on": 0.06666666666666668,
+  "trap_reduction_pct": 61.29032258064515,
+  "success_gate_off": 0.8069444444444445,
+  "success_gate_on": 0.8847222222222221,
+  "return_gate_off": 0.3408333333333333,
+  "return_gate_on": 0.4571111111111111,
+  "gate_decisions": {
+    "PROMOTE": 25726,
+    "REJECT": 214,
+    "ESCALATE": 48
+  },
+  "veto_rate_pct": 0.8234569801446822,
+  "sig_traps_off_minus_on": {
+    "mean_diff": 0.10555555555555556,
+    "t": 6.855223033588089,
+    "df": 11,
+    "p": 2.7451409196719466e-05
+  }
+}

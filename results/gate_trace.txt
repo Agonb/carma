@@ -1,0 +1,26 @@
+CARMA — symbolic safety-gate decision trace (gate ON, eps-greedy policy)
+
+Each step: the policy's proposed action, then the supervisor's decision and reason.
+PROMOTE = safe, executed as-is.  REJECT = would enter a known hazard; vetoed and a
+safe goal-progressing action substituted.  ESCALATE = no safe progress; flagged.
+
+================================================================================
+
+step  0 | pos (7, 10) | proposed UP    | PROMOTE  | UP is safe (enters no known trap)
+step  1 | pos (7, 10) | proposed DOWN  | PROMOTE  | DOWN is safe (enters no known trap)
+step  2 | pos (8, 10) | proposed DOWN  | PROMOTE  | DOWN is safe (enters no known trap)
+step  3 | pos (9, 10) | proposed RIGHT | PROMOTE  | RIGHT is safe (enters no known trap)
+step  4 | pos (9, 11) | proposed UP    | REJECT   | vetoed UP -> trap at (8, 11); substituted safe goal-progressing action LEFT
+step  5 | pos (9, 10) | proposed DOWN  | PROMOTE  | DOWN is safe (enters no known trap)
+step  6 | pos (10, 10) | proposed LEFT  | PROMOTE  | LEFT is safe (enters no known trap)
+step  7 | pos (10, 9) | proposed DOWN  | PROMOTE  | DOWN is safe (enters no known trap)
+step  8 | pos (11, 9) | proposed RIGHT | PROMOTE  | RIGHT is safe (enters no known trap)
+step  9 | pos (11, 10) | proposed RIGHT | PROMOTE  | RIGHT is safe (enters no known trap)
+step 10 | pos (11, 11) | proposed RIGHT | PROMOTE  | RIGHT is safe (enters no known trap)
+step 11 | pos (11, 12) | proposed UP    | PROMOTE  | UP is safe (enters no known trap)
+step 12 | pos (11, 12) | proposed UP    | PROMOTE  | UP is safe (enters no known trap)
+step 13 | pos (11, 12) | proposed RIGHT | PROMOTE  | RIGHT is safe (enters no known trap)
+step 14 | pos (11, 13) | proposed DOWN  | PROMOTE  | DOWN is safe (enters no known trap)
+step 15 | pos (12, 13) | proposed DOWN  | PROMOTE  | DOWN is safe (enters no known trap)
+
+reached goal

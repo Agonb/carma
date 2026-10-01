@@ -1,0 +1,28 @@
+CARMA Phase-1 — sample decision trace (trained M1 agent, greedy)
+
+This agent learned via episodic replay (memory holds 4,475 stored transitions). Below is its greedy solution path; each step shows the
+learned action value — the seed of the interpretability layer.
+
+==============================================================================
+
+step  0 | pos (1, 6) | -> RIGHT | Q-table: RIGHT has highest learned value (+0.53)
+step  1 | pos (1, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.56)
+step  2 | pos (2, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.58)
+step  3 | pos (3, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.60)
+step  4 | pos (4, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.62)
+step  5 | pos (5, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.65)
+step  6 | pos (6, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.67)
+step  7 | pos (7, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.69)
+step  8 | pos (8, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.72)
+step  9 | pos (9, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.74)
+step 10 | pos (10, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.77)
+step 11 | pos (11, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.79)
+step 12 | pos (12, 7) | -> DOWN  | Q-table: DOWN has highest learned value (+0.82)
+step 13 | pos (13, 7) | -> RIGHT | Q-table: RIGHT has highest learned value (+0.85)
+step 14 | pos (13, 8) | -> RIGHT | Q-table: RIGHT has highest learned value (+0.87)
+step 15 | pos (13, 9) | -> RIGHT | Q-table: RIGHT has highest learned value (+0.90)
+step 16 | pos (13, 10) | -> RIGHT | Q-table: RIGHT has highest learned value (+0.93)
+step 17 | pos (13, 11) | -> RIGHT | Q-table: RIGHT has highest learned value (+0.96)
+step 18 | pos (13, 12) | -> RIGHT | Q-table: RIGHT has highest learned value (+0.99)
+
+reached goal
